@@ -12,7 +12,7 @@ from PIL import Image
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # loading the trained model
-filename = os.path.join(BASE_DIR,'Sparks-Streamlit/sk_tree.sav')
+filename = os.path.join(BASE_DIR,'sk_tree.sav')
 model = pickle.load(open(filename, 'rb'))
 
 home_page = 1
@@ -38,7 +38,7 @@ if st.sidebar.button('Algorithm overview'):
 
     st.markdown('### Gini Impurity')
     st.write('It calculates the impurity or entropy at a particular node of the tree')
-    st.image('Sparks-Streamlit\gini.png', use_column_width=True)
+    st.image('gini.png', use_column_width=True)
     # displaying code on the webpage
     with st.echo():
         def gini(rows):
@@ -52,7 +52,7 @@ if st.sidebar.button('Algorithm overview'):
     st.markdown('### Information Gain')
     st.write('Calculating the information gain will decide which question will yield less impurity and arrive at the best question to be chosen as root node.')
     st.write('#### The uncertainty of the starting node, minus the weighted impurity of two child nodes')
-    st.image('Sparks-Streamlit\info_gain.png', use_column_width=True)
+    st.image('info_gain.png', use_column_width=True)
     with st.echo():
         def info_gain(left, right, current_uncertainty):
             p = float(len(left)) / (len(left) + len(right))
@@ -108,7 +108,7 @@ st.sidebar.markdown('Github:<a href="https://github.com/prajvalsudhir"> prajvals
 
 if home_page:
     st.markdown("<center><h1>Decision Tree Classifier</h1></center>", unsafe_allow_html=True)
-    st.image('Sparks-Streamlit/iris_flowers.png', use_column_width=True)
+    st.image('iris_flowers.png', use_column_width=True)
 
     st.markdown('## Enter the values below to get a prediction from the classifier')
 
