@@ -12,7 +12,7 @@ from PIL import Image
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # loading the trained model
-filename = os.path.join(BASE_DIR,'Sparks-Streamlit\sk_tree.sav')
+filename = os.path.join(BASE_DIR,'Sparks-Streamlit/sk_tree.sav')
 model = pickle.load(open(filename, 'rb'))
 
 home_page = 1
@@ -108,7 +108,7 @@ st.sidebar.markdown('Github:<a href="https://github.com/prajvalsudhir"> prajvals
 
 if home_page:
     st.markdown("<center><h1>Decision Tree Classifier</h1></center>", unsafe_allow_html=True)
-    st.image('Sparks-Streamlit\iris_flowers.png', use_column_width=True)
+    st.image('Sparks-Streamlit/iris_flowers.png', use_column_width=True)
 
     st.markdown('## Enter the values below to get a prediction from the classifier')
 
