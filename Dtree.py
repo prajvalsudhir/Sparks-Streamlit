@@ -25,7 +25,7 @@ if st.sidebar.button('Decision Tree Demo'):
 if st.sidebar.button('Tree Visualization'):
     home_page = 0
     st.markdown('# Visualizing the trained Decision Tree')
-    st.image('Sparks-Streamlit\sk-tree.png', use_column_width=True)
+    st.image('sk-tree.png', use_column_width=True)
 
 if st.sidebar.button('Algorithm overview'):
     home_page = 0
