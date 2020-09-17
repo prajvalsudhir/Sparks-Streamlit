@@ -12,7 +12,7 @@ from PIL import Image
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # loading the trained model
-filename = os.path.join(BASE_DIR,'sk_tree.sav')
+filename = 'sk_tree.sav'
 model = pickle.load(open(filename, 'rb'))
 
 home_page = 1
