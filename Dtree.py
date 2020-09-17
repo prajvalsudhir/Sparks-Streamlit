@@ -96,7 +96,10 @@ if st.sidebar.button('Algorithm overview'):
 
 
 
-
+st.sidebar.markdown('## Contact me:')
+st.sidebar.markdown('Email:<a href=""> prajvalsudhir@gmail.com</a>',unsafe_allow_html=True)
+st.sidebar.markdown('LinkedIn:<a href="https://www.linkedin.com/in/prajval-sudhir-571833185/"> Prajval Sudhir</a>',unsafe_allow_html=True)
+st.sidebar.markdown('Github:<a href="https://github.com/prajvalsudhir"> prajvalsudhir</a>',unsafe_allow_html=True)
 
 
 
@@ -111,19 +114,19 @@ if home_page:
 
     st.markdown('### Sepal length')
     sepal_length = st.slider('', min_value=4.3, max_value=7.9, value=None, step=None, format=None, key=None)
-    print('sepal_length:', sepal_length)
+    # print('sepal_length:', sepal_length)
 
     st.markdown('### Sepal width')
     sepal_width = st.slider('', min_value=2.0, max_value=4.4, value=None, step=None, format=None, key=None)
-    print('sepal_width:', sepal_width)
+    # print('sepal_width:', sepal_width)
 
     st.markdown('### Petal length')
     petal_length = st.slider('', min_value=1.0, max_value=6.9, value=None, step=None, format=None, key=None)
-    print('petal_length:', petal_length)
+    # print('petal_length:', petal_length)
 
     st.markdown('### Petal width')
     petal_width = st.slider('', min_value=0.1, max_value=2.5, value=None, step=None, format=None, key=None)
-    print('petal_width:', petal_width)
+    # print('petal_width:', petal_width)
 
     if st.button('PREDICT'):
         st.markdown('### Result:')
